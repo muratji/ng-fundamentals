@@ -1,11 +1,14 @@
 import { Routes } from '@angular/router'
 
+
 import { Error404Component } from './app/error/404.component';
 import {
-    EventsListComponent, EventDetailsComponent, CreateEventComponent
+    EventsListComponent, 
+    EventDetailsComponent, 
+    CreateEventComponent,
+    EventRouteActivator,
+    EventListResolver
 } from './app/events/index'
-import { EventRouteActivator } from './app/events/shared/event-route-activator';
-import { EventListResolver } from './app/events/event-list-resolver.service';
 
 export const appRoutes:Routes = [
     { path: 'events/new', component: CreateEventComponent,
