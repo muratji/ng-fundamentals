@@ -10,7 +10,7 @@ import { ToasTrService } from './common/toastr.service';
 import { EventDetailsComponent } from './events/event-details/event-details.component';
 import { RouterModule } from '@angular/router';
 import { appRoutes } from 'src/routes';
-import { CreateEventComponent } from './events/create-event';
+import { CreateEventComponent } from './events/create-event.component';
 import { Error404Component } from './error/404.component';
 import { EventRouteActivator } from './events/shared/event-route-activator';
 import { EventListResolver } from './events/event-list-resolver.service';
