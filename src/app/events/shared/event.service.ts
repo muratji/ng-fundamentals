@@ -11,8 +11,8 @@ export class EventService {
 
   getEvents(): Observable<IEvent[]> {
     let subject = new Subject<IEvent[]>()
-    setTimeout( () => {
-      subject.next(EVENTS);  
+    setTimeout(() => {
+      subject.next(EVENTS);
       subject.complete();
     }, 100)
     return subject
@@ -27,7 +27,16 @@ export class EventService {
     event.session = []
     EVENTS.push(event)
   }
+
+  updateEvent(event) {
+    let index = EVENTS.findIndex(x => x.id = event.id)
+    EVENTS[index] = event
+  }
+
 }
+
+
+
 
 const EVENTS: IEvent[] = [
   {
