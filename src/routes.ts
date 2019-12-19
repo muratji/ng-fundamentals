@@ -1,4 +1,4 @@
-import { Routes } from '@angular/router'
+import { Routes } from '@angular/router';
 
 
 import { Error404Component } from './app/error/404.component';
@@ -9,7 +9,7 @@ import {
     EventRouteActivator,
     CreateSessionComponent,
     EventListResolver
-} from './app/events/index'
+} from './app/events/index';
 
 export const appRoutes: Routes = [
     {
